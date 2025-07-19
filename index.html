@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Array With Loop</title>
+  </head>
+  <style>
+    .text-center {
+      text-align: center;
+    }
+    .bg-primary {
+      background-color: #eff999;
+    }
+
+    .student-container {
+      background-color: #9297f4;
+      padding: 5px;
+      margin: 5px;
+      border: 4px double #322a2a;
+    }
+
+    .student-card {
+      border:1px  solid #141111;
+      margin: 5px;
+      padding: 5px;
+      background-color: #f899da;
+      border-radius: 5px;
+    }
+  </style>
+  <body class="bg-primary">
+    <h1 class="text-center">Friends List</h1>
+     <div class="student-container" id="students-list"></div>
+
+
+    <script>
+      const students = [
+        "Mansi",
+        "Anjali",
+        "Aditi",
+        "Monika",
+        "Ashivini",
+        "Kaveri",
+        "Aishu",
+        "Akansha",
+        "samaradnya",
+        "gauri",
+        "Dhanu",
+      ];
+
+      const studentsList = document.getElementById("students-list");
+
+      for (let i = 0; i < students.length; i++) {
+        studentsList.innerHTML =
+          studentsList.innerHTML +
+          `<div class="student-card">  ${students[i]}</div>`;
+      }
+    </script>
+  </body>
+</html>
+
+
+
